@@ -1,11 +1,10 @@
-// Carga datos y maneja filtros
 import { initMap, updateMarkers } from './map.js';
 
 let ferias = [];
 
 async function loadFerias() {
   try {
-    const response = await fetch('data/ferias.json');
+    const response = await fetch('../data/ferias.json');
     ferias = await response.json();
     initFilters();
     initMap(ferias);
@@ -15,7 +14,6 @@ async function loadFerias() {
 }
 
 function initFilters() {
-  // Genera opciones únicas de comunas
   const comunas = [...new Set(ferias.map(f => f.comuna))];
   const comunaFilter = document.getElementById('comunaFilter');
   
@@ -26,9 +24,22 @@ function initFilters() {
     comunaFilter.appendChild(option);
   });
 
-  // Configura eventos
+  // Días predefinidos para evitar inconsistencia
+  const dias = ['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado', 'Domingo'];
+  const diaFilter = document.getElementById('diaFilter');
+  
+  dias.forEach(dia => {
+    const option = document.createElement('option');
+    option.value = dia;
+    option.textContent = dia;
+    diaFilter.appendChild(option);
+  });
+
+  // Eventos
   document.getElementById('comunaFilter').addEventListener('change', filterFerias);
   document.getElementById('diaFilter').addEventListener('change', filterFerias);
+  
+  // Botón de geolocalización
   document.getElementById('geolocateBtn').addEventListener('click', locateUser);
 }
 
@@ -46,7 +57,24 @@ function filterFerias() {
 }
 
 function locateUser() {
-  // Implementación en map.js
+  if (!navigator.geolocation) {
+    alert("Tu navegador no soporta geolocalización");
+    return;
+  }
+  
+  navigator.geolocation.getCurrentPosition(
+    (position) => {
+      map.flyTo([position.coords.latitude, position.coords.longitude], 14);
+      L.marker([position.coords.latitude, position.coords.longitude])
+        .addTo(map)
+        .bindPopup("¡Estás aquí!")
+        .openPopup();
+    },
+    (error) => {
+      alert(`Error al obtener ubicación: ${error.message}`);
+    },
+    { timeout: 10000 }
+  );
 }
 
 document.addEventListener('DOMContentLoaded', loadFerias);
