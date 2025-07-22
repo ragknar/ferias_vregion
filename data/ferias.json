@@ -1,0 +1,386 @@
+[
+   {
+    nombre: "Feria El Olivar",
+    comuna: "Valparaíso",
+    lat: -33.0479,
+    lng: -71.6212,
+    dias: ["Martes", "Viernes"],
+    horario: "8:00 - 14:00"
+  },
+  {
+    nombre: "Feria La Palma",
+    comuna: "Viña del Mar",
+    lat: -33.0246,
+    lng: -71.5518,
+    dias: ["Lunes", "Jueves"],
+    horario: "9:00 - 16:00"
+  },
+  {
+    nombre: "Feria Barón",
+    comuna: "Valparaíso",
+    lat: -33.0398,
+    lng: -71.6273,
+    dias: ["Miércoles", "Sábado"],
+    horario: "7:30 - 15:00"
+  },
+  {
+    nombre: "Feria Villa Dulce",
+    comuna: "Quilpué",
+    lat: -33.0495,
+    lng: -71.4427,
+    dias: ["Martes", "Domingo"],
+    horario: "8:30 - 13:30"
+  },
+  {
+    nombre: "Feria El Belloto",
+    comuna: "Quilpué",
+    lat: -33.0521,
+    lng: -71.4512,
+    dias: ["Lunes", "Jueves"],
+    horario: "8:00 - 14:00"
+  },
+  {
+    nombre: "Feria Placilla",
+    comuna: "Valparaíso",
+    lat: -33.0603,
+    lng: -71.5804,
+    dias: ["Miércoles", "Sábado"],
+    horario: "7:00 - 13:00"
+  },
+  {
+    nombre: "Feria Las Américas",
+    comuna: "Viña del Mar",
+    lat: -33.0157,
+    lng: -71.5524,
+    dias: ["Martes", "Viernes"],
+    horario: "8:30 - 14:30"
+  },
+  {
+    nombre: "Feria Recreo",
+    comuna: "Viña del Mar",
+    lat: -33.0123,
+    lng: -71.5501,
+    dias: ["Lunes", "Jueves"],
+    horario: "9:00 - 15:00"
+  },
+  {
+    nombre: "Feria Glorias Navales",
+    comuna: "Valparaíso",
+    lat: -33.0376,
+    lng: -71.6302,
+    dias: ["Miércoles", "Sábado"],
+    horario: "7:00 - 14:00"
+  },
+  {
+    nombre: "Feria Achupallas",
+    comuna: "Viña del Mar",
+    lat: -33.0425,
+    lng: -71.4932,
+    dias: ["Martes", "Viernes"],
+    horario: "8:00 - 13:00"
+  },
+  {
+    nombre: "Feria El Salto",
+    comuna: "Quilpué",
+    lat: -33.0418,
+    lng: -71.4326,
+    dias: ["Lunes", "Jueves"],
+    horario: "8:30 - 14:30"
+  },
+  {
+    nombre: "Feria Miraflores",
+    comuna: "Viña del Mar",
+    lat: -33.0304,
+    lng: -71.5632,
+    dias: ["Martes", "Sábado"],
+    horario: "8:00 - 15:00"
+  },
+  {
+    nombre: "Feria Chorrillos",
+    comuna: "Valparaíso",
+    lat: -33.0692,
+    lng: -71.6123,
+    dias: ["Miércoles", "Domingo"],
+    horario: "7:30 - 13:30"
+  },
+  {
+    nombre: "Feria Forestal",
+    comuna: "Valparaíso",
+    lat: -33.0447,
+    lng: -71.6245,
+    dias: ["Jueves", "Domingo"],
+    horario: "8:00 - 14:00"
+  },
+  {
+    nombre: "Feria El Vergel",
+    comuna: "Quilpué",
+    lat: -33.0387,
+    lng: -71.4419,
+    dias: ["Martes", "Viernes"],
+    horario: "8:00 - 13:30"
+  },
+  {
+    nombre: "Feria La Cruz",
+    comuna: "Quilpué",
+    lat: -33.0462,
+    lng: -71.4385,
+    dias: ["Lunes", "Jueves"],
+    horario: "9:00 - 15:00"
+  },
+  {
+    nombre: "Feria El Sol",
+    comuna: "Villa Alemana",
+    lat: -33.0423,
+    lng: -71.3728,
+    dias: ["Miércoles", "Sábado"],
+    horario: "8:00 - 14:00"
+  },
+  {
+    nombre: "Feria Peñablanca",
+    comuna: "Valparaíso",
+    lat: -33.0528,
+    lng: -71.5987,
+    dias: ["Martes", "Viernes"],
+    horario: "7:30 - 13:30"
+  },
+  {
+    nombre: "Feria Gómez Carreño",
+    comuna: "Viña del Mar",
+    lat: -33.0367,
+    lng: -71.5334,
+    dias: ["Lunes", "Jueves"],
+    horario: "9:00 - 16:00"
+  },
+  {
+    nombre: "Feria El Sauce",
+    comuna: "Valparaíso",
+    lat: -33.0583,
+    lng: -71.6052,
+    dias: ["Miércoles", "Sábado"],
+    horario: "7:00 - 13:00"
+  },
+  {
+    nombre: "Feria Nueva Aurora",
+    comuna: "Quilpué",
+    lat: -33.0449,
+    lng: -71.4472,
+    dias: ["Martes", "Viernes"],
+    horario: "8:30 - 14:00"
+  },
+  {
+    nombre: "Feria Colón",
+    comuna: "Viña del Mar",
+    lat: -33.0225,
+    lng: -71.5517,
+    dias: ["Lunes", "Jueves"],
+    horario: "8:00 - 15:00"
+  },
+  {
+    nombre: "Feria El Litre",
+    comuna: "Valparaíso",
+    lat: -33.0482,
+    lng: -71.6135,
+    dias: ["Martes", "Viernes"],
+    horario: "8:00 - 14:00"
+  },
+  {
+    nombre: "Feria Santa Julia",
+    comuna: "Viña del Mar",
+    lat: -33.0289,
+    lng: -71.5578,
+    dias: ["Miércoles", "Sábado"],
+    horario: "7:30 - 14:30"
+  },
+  {
+    nombre: "Feria Las Dunas",
+    comuna: "Viña del Mar",
+    lat: -33.0251,
+    lng: -71.5432,
+    dias: ["Lunes", "Jueves"],
+    horario: "9:00 - 16:00"
+  },
+  {
+    nombre: "Feria El Castillo",
+    comuna: "Valparaíso",
+    lat: -33.0546,
+    lng: -71.5923,
+    dias: ["Martes", "Viernes"],
+    horario: "8:00 - 14:00"
+  },
+  {
+    nombre: "Feria La Pampilla",
+    comuna: "Viña del Mar",
+    lat: -33.0187,
+    lng: -71.5492,
+    dias: ["Miércoles", "Sábado"],
+    horario: "7:00 - 14:00"
+  },
+  {
+    nombre: "Feria El Boco",
+    comuna: "Viña del Mar",
+    lat: -33.0412,
+    lng: -71.5223,
+    dias: ["Lunes", "Jueves"],
+    horario: "8:30 - 15:30"
+  },
+  {
+    nombre: "Feria Rodelillo",
+    comuna: "Valparaíso",
+    lat: -33.0624,
+    lng: -71.5876,
+    dias: ["Martes", "Viernes"],
+    horario: "8:00 - 13:30"
+  },
+  {
+    nombre: "Feria Villa Hermosa",
+    comuna: "Quilpué",
+    lat: -33.0473,
+    lng: -71.4458,
+    dias: ["Miércoles", "Sábado"],
+    horario: "7:30 - 14:00"
+  },
+  {
+    nombre: "Feria El Retiro",
+    comuna: "Villa Alemana",
+    lat: -33.0384,
+    lng: -71.3682,
+    dias: ["Lunes", "Jueves"],
+    horario: "8:00 - 15:00"
+  },
+  {
+    nombre: "Feria La Laguna",
+    comuna: "Viña del Mar",
+    lat: -33.0345,
+    lng: -71.5276,
+    dias: ["Martes", "Viernes"],
+    horario: "8:30 - 14:30"
+  },
+  {
+    nombre: "Feria El Molino",
+    comuna: "Quilpué",
+    lat: -33.0401,
+    lng: -71.4398,
+    dias: ["Miércoles", "Sábado"],
+    horario: "7:00 - 13:00"
+  },
+  {
+    nombre: "Feria Los Pinos",
+    comuna: "Viña del Mar",
+    lat: -33.0278,
+    lng: -71.5603,
+    dias: ["Lunes", "Jueves"],
+    horario: "9:00 - 16:00"
+  },
+  {
+    nombre: "Feria El Esfuerzo",
+    comuna: "Valparaíso",
+    lat: -33.0517,
+    lng: -71.5998,
+    dias: ["Martes", "Viernes"],
+    horario: "8:00 - 14:00"
+  },
+  {
+    nombre: "Feria Santa Inés",
+    comuna: "Viña del Mar",
+    lat: -33.0312,
+    lng: -71.5647,
+    dias: ["Miércoles", "Sábado"],
+    horario: "7:30 - 14:30"
+  },
+  {
+    nombre: "Feria Las Siete Esquinas",
+    comuna: "Valparaíso",
+    lat: -33.0439,
+    lng: -71.6258,
+    dias: ["Lunes", "Jueves"],
+    horario: "8:30 - 15:30"
+  },
+  {
+    nombre: "Feria El Roble",
+    comuna: "Quilpué",
+    lat: -33.0456,
+    lng: -71.4431,
+    dias: ["Martes", "Viernes"],
+    horario: "8:00 - 14:00"
+  },
+  {
+    nombre: "Feria La Concepción",
+    comuna: "Viña del Mar",
+    lat: -33.0263,
+    lng: -71.5534,
+    dias: ["Miércoles", "Sábado"],
+    horario: "7:00 - 14:00"
+  },
+  {
+    nombre: "Feria El Olivar de Quilpué",
+    comuna: "Quilpué",
+    lat: -33.0488,
+    lng: -71.4465,
+    dias: ["Lunes", "Jueves"],
+    horario: "9:00 - 15:00"
+  },
+  {
+    nombre: "Feria El Parque",
+    comuna: "Villa Alemana",
+    lat: -33.0407,
+    lng: -71.3715,
+    dias: ["Martes", "Viernes"],
+    horario: "8:30 - 14:30"
+  },
+  {
+    nombre: "Feria La Peña",
+    comuna: "Valparaíso",
+    lat: -33.0562,
+    lng: -71.5943,
+    dias: ["Miércoles", "Sábado"],
+    horario: "7:30 - 14:00"
+  },
+  {
+    nombre: "Feria El Bosque",
+    comuna: "Viña del Mar",
+    lat: -33.0296,
+    lng: -71.5591,
+    dias: ["Lunes", "Jueves"],
+    horario: "8:00 - 15:00"
+  },
+  {
+    nombre: "Feria El Tranque",
+    comuna: "Quilpué",
+    lat: -33.0432,
+    lng: -71.4409,
+    dias: ["Martes", "Viernes"],
+    horario: "8:00 - 14:00"
+  },
+  {
+    nombre: "Feria La Florida",
+    comuna: "Valparaíso",
+    lat: -33.0503,
+    lng: -71.6024,
+    dias: ["Miércoles", "Sábado"],
+    horario: "7:00 - 13:30"
+  },
+  {
+    nombre: "Feria El Porvenir",
+    comuna: "Viña del Mar",
+    lat: -33.0271,
+    lng: -71.5556,
+    dias: ["Lunes", "Jueves"],
+    horario: "9:00 - 16:00"
+  },
+  {
+    nombre: "Feria Santa Rosa",
+    comuna: "Quilpué",
+    lat: -33.0467,
+    lng: -71.4443,
+    dias: ["Martes", "Viernes"],
+    horario: "8:30 - 14:30"
+  },
+  {
+    nombre: "Feria El Molle",
+    comuna: "Villa Alemana",
+    lat: -33.0392,
+    lng: -71.3698,
+    dias: ["Miércoles", "Sábado"],
+    horario: "7:30 - 14:00"
+  }
+]
