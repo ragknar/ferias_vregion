@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ferias Valparaíso</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="img/icon-192.png">
+</head>
+<body>
+  <div class="filters">
+    <select id="comunaFilter">
+      <option value="todas">Todas las comunas</option>
+    </select>
+    <select id="diaFilter">
+      <option value="todos">Todos los días</option>
+    </select>
+    <button id="geolocateBtn">📍</button>
+  </div>
+  <div id="map"></div>
+  <div id="noResults" class="hidden">No hay ferias con estos filtros</div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+  <script src="js/map.js"></script>
+  <script src="js/app.js" type="module"></script>
+</body>
+</html>
