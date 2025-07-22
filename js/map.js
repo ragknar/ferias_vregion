@@ -3,33 +3,30 @@ let markerCluster;
 
 export function initMap(ferias) {
   map = L.map('map').setView([-33.05, -71.4], 11);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
   
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; OpenStreetMap contributors'
-  }).addTo(map);
-
   markerCluster = L.markerClusterGroup();
   updateMarkers(ferias);
+
+  map.on('locationfound', (e) => {
+    L.marker(e.latlng).addTo(map).bindPopup("¡Estás aquí!").openPopup();
+  });
 }
 
 export function updateMarkers(ferias) {
   markerCluster.clearLayers();
   
-  const markers = ferias.map(f => {
+  ferias.forEach(f => {
     const marker = L.marker([f.lat, f.lng]);
     marker.bindPopup(`
-      <strong>${f.nombre}</strong><br>
+      <b>${f.nombre}</b><br>
       ${f.comuna}<br>
-      Días: ${f.dias.join(", ")}<br>
-      Horario: ${f.horario}
+      📅 ${f.dias.join(", ")}<br>
+      ⏰ ${f.horario}
     `);
-    return marker;
+    markerCluster.addLayer(marker);
   });
 
-  markerCluster.addLayers(markers);
   map.addLayer(markerCluster);
-  
-  if (ferias.length > 0) {
-    map.fitBounds(markerCluster.getBounds());
-  }
+  if (ferias.length > 0) map.fitBounds(markerCluster.getBounds());
 }
