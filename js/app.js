@@ -1,15 +1,18 @@
-import { initMap, updateMarkers } from './map.js';
+import { initMap, updateMarkers, getMapInstance } from './map.js';
 
 let ferias = [];
+let map; // Declaración añadida
 
 async function loadFerias() {
   try {
-    const response = await fetch('../data/ferias.json');
+    const response = await fetch('data/ferias.json'); // Ruta corregida
     ferias = await response.json();
+    map = getMapInstance(); // Obtenemos la instancia del mapa
     initFilters();
     initMap(ferias);
   } catch (error) {
     console.error("Error cargando ferias:", error);
+    alert("Error cargando los datos. Por favor recarga la página.");
   }
 }
 
