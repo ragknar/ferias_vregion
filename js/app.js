@@ -38,7 +38,7 @@ function filterFerias() {
   
   const filtered = ferias.filter(f => 
     (comuna === 'todas' || f.comuna === comuna) &&
-    (dia === 'todos' || f.dias.includes(dia))
+    (dia === 'todos' || f.dias.some(d => d.toLowerCase().includes(dia.toLowerCase())))
   );
 
   updateMarkers(filtered);
