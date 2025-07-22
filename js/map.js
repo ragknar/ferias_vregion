@@ -14,6 +14,8 @@ export function initMap(ferias) {
 }
 
 export function updateMarkers(ferias) {
+  if (!markerCluster) return; // Asegura que markerCluster existe
+  
   markerCluster.clearLayers();
   
   ferias.forEach(f => {
@@ -28,5 +30,7 @@ export function updateMarkers(ferias) {
   });
 
   map.addLayer(markerCluster);
-  if (ferias.length > 0) map.fitBounds(markerCluster.getBounds());
+  if (ferias.length > 0) {
+    map.fitBounds(markerCluster.getBounds());
+  }
 }
