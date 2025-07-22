@@ -3,18 +3,16 @@ let markerCluster;
 
 export function initMap(ferias) {
   map = L.map('map').setView([-33.05, -71.4], 11);
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
-  
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; OpenStreetMap contributors'
+  }).addTo(map);
+
   markerCluster = L.markerClusterGroup();
   updateMarkers(ferias);
-
-  map.on('locationfound', (e) => {
-    L.marker(e.latlng).addTo(map).bindPopup("¡Estás aquí!").openPopup();
-  });
 }
 
 export function updateMarkers(ferias) {
-  if (!markerCluster) return; // Asegura que markerCluster existe
+  if (!markerCluster) return;
   
   markerCluster.clearLayers();
   
